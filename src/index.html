@@ -4,23 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bf5ff715ac.js" crossorigin="anonymous"></script>
+    <title>TO DO LIST WEB_APP</title>
 </head>
 <body>
-    <section class="main-container">
-        <div class="main-title">
-            <h2>My To Do list</h2>
-          <img class="reload-icon" id="reload-img" alt="reload" />
+    <main>
+        <div class="main-section">
+            <div class="title">
+                <h1>Today's To Do</h1>
+                <i class="fa-solid fa-sync"></i>
+            </div>
+            <div class="form-div">
+                <form action="" method="post" id="todo-form">
+                    <div class="form-input">
+                        <input type="text" name="todo" id="todo-input" placeholder="Add to your list..." required>
+                        <!-- <h3><i class="fa-solid fa-arrow-right-to-bracket"></i></h3> -->
+                    </div>
+                </form>
+                <form action="" method="post" id="edit-todo-item">
+                    <div class="form-input">
+                        <input type="text" name="todo" id="" class="todo-edit-input" placeholder="Edit your item..." required>
+                        <!-- <h3><i class="fa-solid fa-arrow-right-to-bracket"></i></h3> -->
+                    </div>
+                </form>
+            </div>
+            <div class="todo_lists">
+                
+            </div>
+            <div class="clear">
+                <h3>Clear all completed</h3>
+            </div>
         </div>
-        <form class="add-form">
-          <input class="add-input" type="text" required placeholder="Add to your list..."/>
-          <img id="enter-icon" class="enter-icon" alt="intro" />
-        </form>
-        <ul class="list-container" id="list-container"></ul>
-        <div class="clear-btn">Clear all completed</div>
-      </section>
-      <script src="index.js"></script>
+    </main>
 </body>
 </html>
-  
