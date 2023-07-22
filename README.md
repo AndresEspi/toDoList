@@ -44,7 +44,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Not implemented at the moment
+- [Live Demo](https://lerfast.github.io/toDoList/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
