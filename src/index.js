@@ -10,22 +10,22 @@ enterIcon.src = enter;
 reloadIcon.src = reload;
 const todoList = [
   {
-    id: 1,
+    index: 1,
     description: 'Starting project structure',
     completed: false,
   },
   {
-    id: 2,
+    index: 2,
     description: 'Initiate writing JS code',
     completed: false,
   },
   {
-    id: 3,
+    index: 3,
     description: 'Wash my Dog',
     completed: true,
   },
   {
-    id: 4,
+    index: 4,
     description: 'Pray',
     completed: false,
   },
@@ -36,13 +36,13 @@ const renderList = (list) => {
   if (list.length === 0) {
     innerList = '<h3 class="list-placeholder">Add your first task!</h3>';
   } else {
-    const sortedList = list.sort((a, b) => a.id - b.id);
+    const sortedList = list.sort((a, b) => a.index - b.index);
     sortedList.forEach((task) => {
       innerList += `
         <li class="to-do-tasks">
           <div class="check-box ${task.completed ? 'completed' : ''}">${
-  task.completed ? '✓' : ''
-}</div>
+        task.completed ? '✓' : ''
+      }</div>
           <p class="task-description ${task.completed ? 'line-through' : ''}">${task.description}</p>
           <img class="more-logo" src="${moreIcon}"/>
         </li>
