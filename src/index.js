@@ -42,7 +42,7 @@ const renderList = (list) => {
         <li class="to-do-tasks">
           <div class="check-box ${task.completed ? 'completed' : ''}">${
   task.completed ? '✓' : ''
-  }</div>
+}</div>
           <p class="task-description ${task.completed ? 'line-through' : ''}">${task.description}</p>
           <img class="more-logo" src="${moreIcon}"/>
         </li>
@@ -51,5 +51,4 @@ const renderList = (list) => {
   }
   ToDoListContainer.innerHTML = innerList;
 };
-
-window.onload = () => renderList(todoList);w
+window.onload = () => renderList(todoList);
