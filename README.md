@@ -44,7 +44,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [See Live Demo] [Not implemented at the moment]
+- Not implemented at the moment
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
