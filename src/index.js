@@ -69,20 +69,6 @@ const editTaskDescription = (taskId, newDescription) => {
   saveToLocalStorage(todoList);
 };
 
-const clearCompletedTasks = () => {
-  todoList = todoList.filter((task) => !task.completed);
-  todoList.forEach((task, index) => {
-    task.index = index + 1;
-  });
-  saveToLocalStorage(todoList);
-  renderList(todoList);
-};
-
-const clearButton = document.querySelector('.clear-btn');
-clearButton.addEventListener('click', () => {
-  clearCompletedTasks();
-});
-
 window.onload = () => {
   todoList = JSON.parse(localStorage.getItem('todoList')) || [];
   renderList(todoList);
