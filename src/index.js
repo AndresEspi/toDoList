@@ -45,7 +45,7 @@ const renderList = (list) => {
       }</div>
             <p class="task-description ${
               task.completed ? "line-through" : ""
-            }">${task.description}</p>
+}">${task.description}</p>
             <img class="more-logo" src="${moreIcon}"/>
           </li>
           `;
