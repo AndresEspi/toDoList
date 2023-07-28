@@ -1,7 +1,5 @@
 import {
   addTask,
-  deleteTask,
-  clearCompletedTasks,
   updateTaskStatus,
   updateTaskDescription,
   moveTaskToTop,
@@ -36,6 +34,7 @@ describe('Todo List Functions', () => {
       expect(initialList[0].description).toBe('Test Task 1');
       expect(initialList[1].description).toBe('Test Task 2');
     });
+
     it('should update localStorage with the new list', () => {
       const initialList = [];
       addTask('Test Task 1', initialList);
@@ -43,6 +42,7 @@ describe('Todo List Functions', () => {
       expect(JSON.parse(localStorage.getItem('todoList'))).toEqual(initialList);
     });
   });
+
   describe("updateTaskStatus (mark as completed)", () => {
     it("should mark a task as completed", () => {
       const initialList = [
@@ -71,6 +71,7 @@ describe('Todo List Functions', () => {
       expect(JSON.parse(localStorage.getItem("todoList"))).toEqual(updatedList);
     });
   });
+
   describe("updateTaskStatus (mark as incomplete)", () => {
     it("should mark a task as incomplete", () => {
       const initialList = [
@@ -99,6 +100,7 @@ describe('Todo List Functions', () => {
       expect(JSON.parse(localStorage.getItem("todoList"))).toEqual(updatedList);
     });
   });
+
   describe("updateTaskDescription", () => {
     it("should update the description of a task", () => {
       const initialList = [
@@ -131,6 +133,7 @@ describe('Todo List Functions', () => {
       expect(JSON.parse(localStorage.getItem("todoList"))).toEqual(updatedList);
     });
   });
+
   describe("moveTaskToTop", () => {
     it("should move a task to the top of the list", () => {
       const initialList = [
@@ -159,6 +162,7 @@ describe('Todo List Functions', () => {
       expect(JSON.parse(localStorage.getItem("todoList"))).toEqual(updatedList);
     });
   });
+
   describe("moveTaskToBottom", () => {
     it("should move a task to the bottom of the list", () => {
       const initialList = [

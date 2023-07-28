@@ -126,8 +126,8 @@ a:hover {
   vertical-align: middle;
 }
 
-div.path a:link,
-div.path a:visited {
+div.path a::link,
+div.path a::visited {
   color: #333;
 }
 
@@ -224,8 +224,6 @@ table.coverage td span.cline-any {
   border-right: none !important;
 }
 
-.coverage-summary th.pct {}
-
 .coverage-summary th.pic,
 .coverage-summary th.abs,
 .coverage-summary td.pct,
@@ -240,8 +238,6 @@ table.coverage td span.cline-any {
 .coverage-summary td.pic {
   min-width: 120px !important;
 }
-
-.coverage-summary tfoot td {}
 
 .coverage-summary .sorter {
   height: 10px;
@@ -288,10 +284,7 @@ table.coverage td span.cline-any {
 }
 
 /* medium red */
-.cstat-no,
-.fstat-no,
-.cbranch-no,
-.cbranch-no {
+.cstat-no .fstat-no .cbranch-no {
   background: #f6c6ce;
 }
 
