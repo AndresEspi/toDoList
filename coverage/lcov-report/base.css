@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 /* Agregar una línea vacía antes de la regla */
 body,
 html {
@@ -95,7 +96,7 @@ a:hover {
   display: block;
 }
 
-.clearfix:after {
+.clearfix::after {
   content: "";
   display: block;
   height: 0;
@@ -234,8 +235,6 @@ table.coverage td span.cline-any {
   border-right: none !important;
 }
 
-.coverage-summary th.pct {}
-
 .coverage-summary th.pic,
 .coverage-summary th.abs,
 .coverage-summary td.pct,
@@ -250,8 +249,6 @@ table.coverage td span.cline-any {
 .coverage-summary td.pic {
   min-width: 120px !important;
 }
-
-.coverage-summary tfoot td {}
 
 .coverage-summary .sorter {
   height: 10px;
@@ -300,7 +297,6 @@ table.coverage td span.cline-any {
 /* Rojo medio */
 .cstat-no,
 .fstat-no,
-.cbranch-no,
 .cbranch-no {
   background: #f6c6ce;
 }
