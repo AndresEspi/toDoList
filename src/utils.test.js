@@ -43,152 +43,152 @@ describe('Todo List Functions', () => {
     });
   });
 
-  describe("updateTaskStatus (mark as completed)", () => {
-    it("should mark a task as completed", () => {
+  describe('updateTaskStatus (mark as completed)', () => {
+    it('should mark a task as completed', () => {
       const initialList = [
         {
           id: 1,
-          description: "Task 1",
+          description: 'Task 1',
           completed: false,
           index: 1,
         },
         {
           id: 2,
-          description: "Task 2",
+          description: 'Task 2',
           completed: false,
           index: 2,
         },
         {
           id: 3,
-          description: "Task 3",
+          description: 'Task 3',
           completed: false,
           index: 3,
         },
       ];
       const updatedList = updateTaskStatus(2, true, initialList);
       expect(updatedList[1].completed).toBe(true);
-      localStorage.setItem("todoList", JSON.stringify(updatedList));
-      expect(JSON.parse(localStorage.getItem("todoList"))).toEqual(updatedList);
+      localStorage.setItem('todoList', JSON.stringify(updatedList));
+      expect(JSON.parse(localStorage.getItem('todoList'))).toEqual(updatedList);
     });
   });
 
-  describe("updateTaskStatus (mark as incomplete)", () => {
-    it("should mark a task as incomplete", () => {
+  describe('updateTaskStatus (mark as incomplete)', () => {
+    it('should mark a task as incomplete', () => {
       const initialList = [
         {
           id: 1,
-          description: "Task 1",
+          description: 'Task 1',
           completed: true,
           index: 1,
         },
         {
           id: 2,
-          description: "Task 2",
+          description: 'Task 2',
           completed: true,
           index: 2,
         },
         {
           id: 3,
-          description: "Task 3",
+          description: 'Task 3',
           completed: true,
           index: 3,
         },
       ];
       const updatedList = updateTaskStatus(2, false, initialList);
       expect(updatedList[1].completed).toBe(false);
-      localStorage.setItem("todoList", JSON.stringify(updatedList));
-      expect(JSON.parse(localStorage.getItem("todoList"))).toEqual(updatedList);
+      localStorage.setItem('todoList', JSON.stringify(updatedList));
+      expect(JSON.parse(localStorage.getItem('todoList'))).toEqual(updatedList);
     });
   });
 
-  describe("updateTaskDescription", () => {
-    it("should update the description of a task", () => {
+  describe('updateTaskDescription', () => {
+    it('should update the description of a task', () => {
       const initialList = [
         {
           id: 1,
-          description: "Task 1",
+          description: 'Task 1',
           completed: false,
           index: 1,
         },
         {
           id: 2,
-          description: "Task 2",
+          description: 'Task 2',
           completed: false,
           index: 2,
         },
         {
           id: 3,
-          description: "Task 3",
+          description: 'Task 3',
           completed: false,
           index: 3,
         },
       ];
       const updatedList = updateTaskDescription(
         2,
-        "Updated Task 2",
+        'Updated Task 2',
         initialList
       );
-      expect(updatedList[1].description).toBe("Updated Task 2");
-      localStorage.setItem("todoList", JSON.stringify(updatedList));
-      expect(JSON.parse(localStorage.getItem("todoList"))).toEqual(updatedList);
+      expect(updatedList[1].description).toBe('Updated Task 2');
+      localStorage.setItem('todoList', JSON.stringify(updatedList));
+      expect(JSON.parse(localStorage.getItem('todoList'))).toEqual(updatedList);
     });
   });
 
-  describe("moveTaskToTop", () => {
-    it("should move a task to the top of the list", () => {
+  describe('moveTaskToTop', () => {
+    it('should move a task to the top of the list', () => {
       const initialList = [
         {
           id: 1,
-          description: "Task 1",
+          description: 'Task 1',
           completed: false,
           index: 1,
         },
         {
           id: 2,
-          description: "Task 2",
+          description: 'Task 2',
           completed: false,
           index: 2,
         },
         {
           id: 3,
-          description: "Task 3",
+          description: 'Task 3',
           completed: false,
           index: 3,
         },
       ];
       const updatedList = moveTaskToTop(2, initialList);
       expect(updatedList[0].id).toBe(2);
-      localStorage.setItem("todoList", JSON.stringify(updatedList));
-      expect(JSON.parse(localStorage.getItem("todoList"))).toEqual(updatedList);
+      localStorage.setItem('todoList', JSON.stringify(updatedList));
+      expect(JSON.parse(localStorage.getItem('todoList'))).toEqual(updatedList);
     });
   });
 
-  describe("moveTaskToBottom", () => {
-    it("should move a task to the bottom of the list", () => {
+  describe('moveTaskToBottom', () => {
+    it('should move a task to the bottom of the list', () => {
       const initialList = [
         {
           id: 1,
-          description: "Task 1",
+          description: 'Task 1',
           completed: false,
           index: 1,
         },
         {
           id: 2,
-          description: "Task 2",
+          description: 'Task 2',
           completed: false,
           index: 2,
         },
         {
           id: 3,
-          description: "Task 3",
+          description: 'Task 3',
           completed: false,
           index: 3,
         },
       ];
       const updatedList = moveTaskToBottom(2, initialList);
       expect(updatedList[2].id).toBe(2);
-      localStorage.setItem("todoList", JSON.stringify(updatedList));
-      expect(JSON.parse(localStorage.getItem("todoList"))).toEqual(updatedList);
+      localStorage.setItem('todoList', JSON.stringify(updatedList));
+      expect(JSON.parse(localStorage.getItem('todoList'))).toEqual(updatedList);
     });
   });
 });

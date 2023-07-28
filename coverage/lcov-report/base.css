@@ -1,3 +1,4 @@
+/* CSS corregido */
 body,
 html {
   margin: 0;
@@ -126,8 +127,8 @@ a:hover {
   vertical-align: middle;
 }
 
-div.path a::link,
-div.path a::visited {
+div.path a:link,
+div.path a:visited {
   color: #333;
 }
 
@@ -137,7 +138,8 @@ table.coverage {
   padding: 0;
 }
 
-table.coverage td {
+table.coverage td,
+table.coverage th {
   margin: 0;
   padding: 0;
   vertical-align: top;
@@ -284,7 +286,9 @@ table.coverage td span.cline-any {
 }
 
 /* medium red */
-.cstat-no .fstat-no .cbranch-no {
+.cstat-no,
+.fstat-no,
+.cbranch-no {
   background: #f6c6ce;
 }
 
