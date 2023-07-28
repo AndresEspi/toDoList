@@ -44,8 +44,6 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://lerfast.github.io/toDoList/dist/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -105,13 +103,17 @@ The deployment of the project will depend on your needs and the implementation p
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 👥 Authors <a name="AndresEspi-CarlosZ96-78fatemanazari"></a>
+## 👥 Authors <a name="AndresEspi-Aderounmu Adeniyi"></a>
 
-👤 **AndresEspi**
+👤 **AndresEspi | Godedict**
 
 - GitHub: [@githubhandle](https://github.com/AndresEspi)
 - Twitter: [@twitterhandle](https://twitter.com/Andres_Esp1nosa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/andres-espinosa-3bba67271/)
+
+- GitHub: [@githubhandle](https://github.com/Godedict)
+- Twitter: [@twitterhandle](https://twitter.com/lokkiofasgard)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aderounmu-adeniyi)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
