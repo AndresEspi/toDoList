@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: Helvetica Neue, Helvetica, Arial;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #333;
 }
@@ -42,7 +42,7 @@ pre {
 }
 
 a {
-  color: #0074D9;
+  color: #0074d9;
   text-decoration: none;
 }
 
@@ -130,7 +130,7 @@ a:hover {
   font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   font-size: 10px;
   color: #555;
-  background: #E8E8E8;
+  background: #e8e8e8;
   padding: 4px 5px;
   border-radius: 3px;
   vertical-align: middle;
@@ -283,18 +283,18 @@ table.coverage td span.cline-any {
 .red.solid,
 .status-line.low,
 .low .cover-fill {
-  background: #C21F39
+  background: #c21f39;
 }
 
 .low .chart {
-  border: 1px solid #C21F39
+  border: 1px solid #c21f39;
 }
 
 .highlighted,
 .highlighted .cstat-no,
 .highlighted .fstat-no,
 .highlighted .cbranch-no {
-  background: #C21F39 !important;
+  background: #c21f39 !important;
 }
 
 /* medium red */
@@ -302,34 +302,34 @@ table.coverage td span.cline-any {
 .fstat-no,
 .cbranch-no,
 .cbranch-no {
-  background: #F6C6CE
+  background: #f6c6ce;
 }
 
 /* light red */
 .low,
 .cline-no {
-  background: #FCE1E5
+  background: #fce1e5;
 }
 
 /* light green */
 .high,
 .cline-yes {
-  background: rgb(230, 245, 208)
+  background: rgb(230, 245, 208);
 }
 
 /* medium green */
 .cstat-yes {
-  background: rgb(161, 215, 106)
+  background: rgb(161, 215, 106);
 }
 
 /* dark green */
 .status-line.high,
 .high .cover-fill {
-  background: rgb(77, 146, 33)
+  background: rgb(77, 146, 33);
 }
 
 .high .chart {
-  border: 1px solid rgb(77, 146, 33)
+  border: 1px solid rgb(77, 146, 33);
 }
 
 /* dark yellow (gold) */
