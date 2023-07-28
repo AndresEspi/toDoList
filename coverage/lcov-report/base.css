@@ -279,7 +279,7 @@ table.coverage td span.cline-any {
   color: #111;
 }
 
-/* Color rojo oscuro */
+/* Rojo oscuro */
 .red.solid,
 .status-line.low,
 .low .cover-fill {
@@ -290,7 +290,6 @@ table.coverage td span.cline-any {
   border: 1px solid #c21f39;
 }
 
-/* Resaltado */
 .highlighted,
 .highlighted .cstat-no,
 .highlighted .fstat-no,
@@ -298,7 +297,7 @@ table.coverage td span.cline-any {
   background: #c21f39 !important;
 }
 
-/* Color rojo medio */
+/* Rojo medio */
 .cstat-no,
 .fstat-no,
 .cbranch-no,
@@ -306,24 +305,24 @@ table.coverage td span.cline-any {
   background: #f6c6ce;
 }
 
-/* Color rojo claro */
+/* Rojo claro */
 .low,
 .cline-no {
   background: #fce1e5;
 }
 
-/* Color verde claro */
+/* Verde claro */
 .high,
 .cline-yes {
   background: rgb(230, 245, 208);
 }
 
-/* Color verde medio */
+/* Verde medio */
 .cstat-yes {
   background: rgb(161, 215, 106);
 }
 
-/* Color verde oscuro */
+/* Verde oscuro */
 .status-line.high,
 .high .cover-fill {
   background: rgb(77, 146, 33);
@@ -333,7 +332,7 @@ table.coverage td span.cline-any {
   border: 1px solid rgb(77, 146, 33);
 }
 
-/* Color amarillo oscuro (oro) */
+/* Amarillo oscuro (dorado) */
 .status-line.medium,
 .medium .cover-fill {
   background: #f9cd0b;
@@ -343,7 +342,7 @@ table.coverage td span.cline-any {
   border: 1px solid #f9cd0b;
 }
 
-/* Color amarillo claro */
+/* Amarillo claro */
 .medium {
   background: #fff4c2;
 }
