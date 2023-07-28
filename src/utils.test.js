@@ -126,7 +126,7 @@ describe('Todo List Functions', () => {
       const updatedList = updateTaskDescription(
         2,
         'Updated Task 2',
-        initialList
+        initialList,
       );
       expect(updatedList[1].description).toBe('Updated Task 2');
       localStorage.setItem('todoList', JSON.stringify(updatedList));
