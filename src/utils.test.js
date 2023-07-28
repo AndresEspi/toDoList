@@ -4,7 +4,7 @@ import {
   updateTaskDescription,
   moveTaskToTop,
   moveTaskToBottom,
-} from "./utils.js";
+} from './utils.js';
 
 const localStorageMock = (() => {
   let store = {};
@@ -22,24 +22,24 @@ const localStorageMock = (() => {
   };
 })();
 
-Object.defineProperty(window, "localStorage", { value: localStorageMock });
+Object.defineProperty(window, 'localStorage', { value: localStorageMock });
 
-describe("Todo List Functions", () => {
-  describe("addTask", () => {
-    it("should add a task to the list", () => {
+describe('Todo List Functions', () => {
+  describe('addTask', () => {
+    it('should add a task to the list', () => {
       const initialList = [];
-      addTask("Test Task 1", initialList);
-      addTask("Test Task 2", initialList);
+      addTask('Test Task 1', initialList);
+      addTask('Test Task 2', initialList);
       expect(initialList).toHaveLength(2);
-      expect(initialList[0].description).toBe("Test Task 1");
-      expect(initialList[1].description).toBe("Test Task 2");
+      expect(initialList[0].description).toBe('Test Task 1');
+      expect(initialList[1].description).toBe('Test Task 2');
     });
 
-    it("should update localStorage with the new list", () => {
+    it('should update localStorage with the new list', () => {
       const initialList = [];
-      addTask("Test Task 1", initialList);
-      addTask("Test Task 2", initialList);
-      expect(JSON.parse(localStorage.getItem("todoList"))).toEqual(initialList);
+      addTask('Test Task 1', initialList);
+      addTask('Test Task 2', initialList);
+      expect(JSON.parse(localStorage.getItem('todoList'))).toEqual(initialList);
     });
   });
 
