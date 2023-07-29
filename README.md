@@ -127,7 +127,7 @@ The deployment of the project will depend on your needs and the implementation p
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/AndresEspi/AwesomeBooks/issues).
+Feel free to check the [issues page](https://github.com/AndresEspi/toDoList/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
