@@ -1,23 +1,30 @@
 <a name="readme-top"></a>
+
+<div align="center">
+  <br/>
+  <h3><b>Adeniyi Aderounmu | Ulises Cappa - Microverse Student</b></h3>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-    - [Key Futures](#key-futures)
+    - [Key Features](#key-features)
+    - [Future Features](#future-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Clone the repository](#Clone-the-repository)
   - [Setup](#setup)
-  - [Install](#install)
+  - [Test](#test)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-
+<!-- PROJECT DESCRIPTION -->
 
 # 📖 To Do List Proyect<a name="Awesome Books"></a>
 
@@ -111,15 +118,9 @@ The deployment of the project will depend on your needs and the implementation p
 - Twitter: [@twitterhandle](https://twitter.com/Andres_Esp1nosa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/andres-espinosa-3bba67271/)
 
-- GitHub: [@githubhandle](https://github.com/Godedict)
-- Twitter: [@twitterhandle](https://twitter.com/lokkiofasgard)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aderounmu-adeniyi)
 
-## 🔭 Future Features <a name="future-features"></a>
-
-- **Add animation for the project**
-- **Add the editing functionality**
-- **Add the test for the project**
+- GitHub: [@godedict](https://github.com/godedict)
+- Linkedin: [@adeniyi](https://www.linkedin.com/in/Aderounmu-adeniyi/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,33 +128,26 @@ The deployment of the project will depend on your needs and the implementation p
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/AndresEspi/AwesomeBooks/issues).
+Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you find this project useful, please consider supporting it. Your support means a lot and helps motivate me to continue improving.
+If you like this project feel free to watch it and take some features that will enhance your project
+as well.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank .....
-- **The Microverse team**
-- **All my reviewers**
-- **My standup teammates**
-- **My coding partners**
-- **My morning session teammates**
-- **My Standup session teammates**
+I would like to thank the Microverse Team for reviewing my code and making me a better
+professional.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE.md) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
