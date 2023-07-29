@@ -1,3 +1,4 @@
+/* General styles */
 body,
 html {
   margin: 0;
@@ -139,6 +140,7 @@ div.path a:visited {
   color: #333;
 }
 
+/* Styles related to the coverage summary table */
 table.coverage {
   border-collapse: collapse;
   margin: 10px 0 0 0;
@@ -168,6 +170,7 @@ table.coverage td span.cline-any {
   width: 100%;
 }
 
+/* Styles related to various branches and coverage types */
 .missing-if-branch {
   display: inline-block;
   margin-right: 5px;
@@ -192,6 +195,7 @@ table.coverage td span.cline-any {
   color: inherit !important;
 }
 
+/* Styles for coverage status and highlighting */
 .coverage-summary {
   border-collapse: collapse;
   width: 100%;
@@ -271,23 +275,20 @@ table.coverage td span.cline-any {
   height: 10px;
 }
 
-/* yellow */
+/* Yellow background for cbranch-no */
 .cbranch-no {
   background: yellow !important;
   color: #111;
 }
 
-/* dark red */
+/* Dark red background for certain elements */
 .red.solid,
 .status-line.low,
 .low .cover-fill {
   background: #c21f39;
 }
 
-.low .chart {
-  border: 1px solid #c21f39;
-}
-
+/* Styles related to coverage highlighting */
 .highlighted,
 .highlighted .cstat-no,
 .highlighted .fstat-no,
@@ -295,7 +296,7 @@ table.coverage td span.cline-any {
   background: #c21f39 !important;
 }
 
-/* medium red */
+/* Medium red background for coverage status */
 .cstat-no,
 .fstat-no,
 .cbranch-no,
@@ -303,44 +304,36 @@ table.coverage td span.cline-any {
   background: #f6c6ce;
 }
 
-/* light red */
+/* Light red background for low status */
 .low,
 .cline-no {
   background: #fce1e5;
 }
 
-/* light green */
+/* Light green background for high status */
 .high,
 .cline-yes {
   background: rgb(230, 245, 208);
 }
 
-/* medium green */
+/* Medium green background for cstat-yes */
 .cstat-yes {
   background: rgb(161, 215, 106);
 }
 
-/* dark green */
+/* Dark green background for certain elements */
 .status-line.high,
 .high .cover-fill {
   background: rgb(77, 146, 33);
 }
 
-.high .chart {
-  border: 1px solid rgb(77, 146, 33);
-}
-
-/* dark yellow (gold) */
+/* Dark yellow (gold) background for medium status */
 .status-line.medium,
 .medium .cover-fill {
   background: #f9cd0b;
 }
 
-.medium .chart {
-  border: 1px solid #f9cd0b;
-}
-
-/* light yellow */
+/* Light yellow background for medium status */
 .medium {
   background: #fff4c2;
 }
