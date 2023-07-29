@@ -1,4 +1,5 @@
-/* General styles */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable no-descending-specificity */
 body,
 html {
   margin: 0;
@@ -17,8 +18,8 @@ body {
 }
 
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -236,8 +237,6 @@ table.coverage td span.cline-any {
   border-right: none !important;
 }
 
-.coverage-summary th.pct {}
-
 .coverage-summary th.pic,
 .coverage-summary th.abs,
 .coverage-summary td.pct,
@@ -252,8 +251,6 @@ table.coverage td span.cline-any {
 .coverage-summary td.pic {
   min-width: 120px !important;
 }
-
-.coverage-summary tfoot td {}
 
 .coverage-summary .sorter {
   height: 10px;
@@ -296,7 +293,6 @@ table.coverage td span.cline-any {
   background: #c21f39 !important;
 }
 
-/* Medium red background for coverage status */
 .cstat-no,
 .fstat-no,
 .cbranch-no,
