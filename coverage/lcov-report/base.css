@@ -5,7 +5,7 @@ body, html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #333;
 }
@@ -13,8 +13,6 @@ body {
 .small { font-size: 12px; }
 
 *, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -22,7 +20,7 @@ h1 { font-size: 20px; margin: 0; }
 h2 { font-size: 14px; }
 
 pre {
-  font: 12px/1.4 Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   margin: 0;
   padding: 0;
   -moz-tab-size: 2;
@@ -35,7 +33,7 @@ a:hover { text-decoration: underline; }
 
 .strong { font-weight: bold; }
 
-.space-top1 { padding: 10px 0 0 0; }
+.space-top1 { padding-top: 10px; }
 .pad2y { padding: 20px 0; }
 .pad1y { padding: 10px 0; }
 .pad2x { padding: 0 20px; }
@@ -45,7 +43,7 @@ a:hover { text-decoration: underline; }
 .space-right2 { padding-right: 20px; }
 .center { text-align: center; }
 .clearfix { display: block; }
-.clearfix:after {
+.clearfix::after {
   content: '';
   display: block;
   height: 0;
@@ -67,7 +65,7 @@ a:hover { text-decoration: underline; }
 .quiet a { opacity: 0.7; }
 
 .fraction {
-  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 10px;
   color: #555;
   background: #e8e8e8;
@@ -166,23 +164,23 @@ table.coverage td span.cline-any {
 /* yellow */
 .cbranch-no { background: yellow !important; color: #111; }
 /* dark red */
-.red.solid, .status-line.low, .low .cover-fill { background: #C21F39 }
-.low .chart { border: 1px solid #C21F39 }
+.red.solid, .status-line.low, .low .cover-fill { background: #C21F39; }
+.low .chart { border: 1px solid #C21F39; }
 .highlighted,
 .highlighted .cstat-no, .highlighted .fstat-no, .highlighted .cbranch-no {
   background: #C21F39 !important;
 }
 /* medium red */
-.cstat-no, .fstat-no, .cbranch-no, .cbranch-no { background: #F6C6CE }
+.cstat-no, .fstat-no, .cbranch-no, .cbranch-no { background: #F6C6CE; }
 /* light red */
-.low, .cline-no { background: #FCE1E5 }
+.low, .cline-no { background: #FCE1E5; }
 /* light green */
-.high, .cline-yes { background: rgb(230, 245, 208) }
+.high, .cline-yes { background: rgb(230, 245, 208); }
 /* medium green */
-.cstat-yes { background: rgb(161, 215, 106) }
+.cstat-yes { background: rgb(161, 215, 106); }
 /* dark green */
-.status-line.high, .high .cover-fill { background: rgb(77, 146, 33) }
-.high .chart { border: 1px solid rgb(77, 146, 33) }
+.status-line.high, .high .cover-fill { background: rgb(77, 146, 33); }
+.high .chart { border: 1px solid rgb(77, 146, 33); }
 /* dark yellow (gold) */
 .status-line.medium, .medium .cover-fill { background: #f9cd0b; }
 .medium .chart { border: 1px solid #f9cd0b; }
